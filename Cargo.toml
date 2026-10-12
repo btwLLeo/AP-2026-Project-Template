@@ -1,0 +1,25 @@
+[workspace]
+members = [
+  "crates/*"
+]
+resolver = "3"
+
+[workspace.package]
+version = "0.1.0"
+authors = [
+  "Rareș Postelnicu <rares.postelnicu@studenti.unitn.it>",
+  "Thomas Mattarei <thomas.mattarei@studenti.unitn.it>",
+  "Mattia Colosio <mattia.colosio@studenti.unitn.it>",
+  "Nikita Rotaru <nikita.rotaru@studenti.unitn.it>"
+]
+description = "Rust in Case's AP Project"
+rust-version = "1.98.1"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+pedantic = "deny"
+
+[workspace.dependencies]
+# deps.
