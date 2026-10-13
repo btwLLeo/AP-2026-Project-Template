@@ -1,0 +1,20 @@
+[package]
+name = "game"
+version = "0.1.0"
+edition = "2024"
+authors.workspace = true
+rust-version.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+# Uncomment once the contractor is defined
+# geometry = { git = "https://url.git", branch = "main" }
+# might need to trade them
+island = { path = "../island" }
+ship = { path = "../ship" }
+# private (ours)
+chart = { path = "../chart" }
+admirality = { path = "../admirality" }
+cartographer = { path = "../cartographer" }
